@@ -20,11 +20,7 @@ class Controller extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
-    {
-    	$user = Auth::user();
-    	return view('welcome',compact('user'));
-    }
+ 
 
     /**
      * Este mé del controlador debe crear un nuevo registro 
@@ -41,7 +37,7 @@ class Controller extends Controller
     public function create(Request $request)
     {
     	$todo = new Todo();
-    	$todo->description = $request->description;
+    	$todo->id = $request->id;
     	$todo->user_id = Auth::id();
     	$todo->save();
     	return redirect('/'); 
@@ -79,7 +75,7 @@ class Controller extends Controller
     	}
     	else
     	{
-    		$todo->description = $request->description;
+    		$todo->id = $request->id;
 	    	$todo->save();
 	    	return redirect('/'); 
     	}

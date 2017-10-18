@@ -23,5 +23,5 @@ Auth::routes();
 Route::get('/todo','TodoController@add');
 Route::post('/todo','TodoController@create');
 
-Route::get('/todo/{todo}','TodoController@edit');
+Route::get('/todo/{todo}','TodoController@delete');
 Route::post('/todo/{todo}','TodoController@update');*/ 
