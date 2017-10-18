@@ -29414,7 +29414,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     mounted: function mounted() {
-        this.items = [{ text: 'Primer recordatorio', done: true }, { text: 'Segundo recordatorio', done: false }, { text: 'Tercero recordatorio', done: false }, { text: 'Cuarto recordatorio', done: true }, { text: 'Quinto recordatorio', done: false }];
+        this.items = [{ text: 'Primer recordatorio',
+        done: true }, { text: 'Segundo recordatorio', 
+        done: false }, { text: 'Tercero recordatorio', 
+        done: false }, { text: 'Cuarto recordatorio', 
+        done: true }, { text: 'Quinto recordatorio', done: false }];
     },
 
     methods: {
