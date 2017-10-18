@@ -20,6 +20,7 @@
                 <td class="is-narrow">
                     <a class="button is-danger is-small" @click="removeTodo(todo)">Eliminar</a>
                 </td>
+                
             </tr>
         </table>
     </div>

@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*
+Route::get('/', 'TodoController@index');
+
+Auth::routes();
+
+Route::get('/todo','TodoController@add');
+Route::post('/todo','TodoController@create');
+
+Route::get('/todo/{todo}','TodoController@edit');
+Route::post('/todo/{todo}','TodoController@update');*/ 
