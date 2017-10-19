@@ -35,7 +35,7 @@ class Todo extends Model
      */
     protected $fillable = [
         'text',
-        'done'
+        'done',
     ];
 
     /**
